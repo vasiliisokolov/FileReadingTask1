@@ -10,7 +10,7 @@ int main()
     std::cout << "Entert the word to search: ";
     std::cin >> searchOne;
     int counter = 0;
-    do
+    while (!book.eof())
     {
         book >> temp;
         if (temp == searchOne)
@@ -18,7 +18,7 @@ int main()
             counter++;
         }
         //std::cout << temp << std::endl;
-    } while (temp != "End");
+    }
     book.close();
     std::cout << "We found " << counter << " matches!" << std::endl;
 }
