@@ -4,7 +4,7 @@
 int main()
 {
     std::ifstream book;
-    book.open("C:\\Users\\Василий\\source\\repos\\FileReadingTask1\\words.txt");
+    book.open("words.txt");
     std::string temp;
     std::string searchOne;
     std::cout << "Entert the word to search: ";
